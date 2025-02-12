@@ -95,3 +95,19 @@ const nav =document.querySelector(".nav"),
                 allSection[i].classList.toggle("open");
             }
         }
+// JavaScript to handle video play on click
+document.querySelectorAll('.portfolio-item-inner').forEach(item => {
+    item.addEventListener('click', () => {
+        const videoContainer = item.querySelector('.video-placeholder');
+        const video = item.querySelector('.portfolio-video');
+        
+        // Toggle video visibility
+        if (videoContainer.classList.contains('active')) {
+            video.pause();
+            videoContainer.classList.remove('active');
+        } else {
+            videoContainer.classList.add('active');
+            video.play();
+        }
+    });
+});
