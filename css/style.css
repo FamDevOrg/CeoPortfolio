@@ -817,6 +817,10 @@ h3.my-profession
     height: 50px;
     padding: 0 50px;
 }
+.pdf-download-link{
+    text-decoration: none;
+}
+
 @media (max-width:1199px)
 {
     .section .container
